@@ -13,7 +13,8 @@ def run_guessing_game
       puts "You guessed the correct number!"
     elsif input.to_i != randNum
       puts "The computer guessed #{randNum}."
-    else
+    elsif input == "exit"
+      puts "Goodbye!"
       puts "Inavalid input"
     end
     #if input.class == Integer     
