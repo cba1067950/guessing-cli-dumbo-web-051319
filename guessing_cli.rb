@@ -3,13 +3,16 @@ require 'pry'
 def run_guessing_game 
   puts "Guess a number between 1 and 6."
   input = ""
-  randNum = 1 + rand(6)
+  randNum = rand(1..6)
 
   
   while input != "exit"
     input = gets.chomp
     
-    if input == 
+    if input == randNum
+      puts "You guessed the correct number!"
+    elsif input != randNum
+      puts
     
     #if input.class == Integer     
     #  case 
