@@ -14,6 +14,7 @@ def run_guessing_game
           puts "You guessed the correct number!"
         when randNum != input
           puts "The computer guessed #{randNum}"
+      end
     end
     if input.class == string 
       case 
