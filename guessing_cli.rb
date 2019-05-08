@@ -12,7 +12,7 @@ def run_guessing_game
     if input == randNum
       puts "You guessed the correct number!"
     elsif input != randNum
-      puts
+      puts "The computer guessed #{randNum}""
     
     #if input.class == Integer     
     #  case 
