@@ -15,10 +15,12 @@ def run_guessing_game
         when randNum != input
           puts "The computer guessed #{randNum}"
     end
-    when input == "exit"
+    if input.class == string 
+      case 
+        when input == "exit"
           puts "Goodbye!"
-      else
-        puts "Invalid input"
+        else
+          puts "Invalid input"
     end
     
   end
