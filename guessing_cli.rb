@@ -15,6 +15,7 @@ def run_guessing_game
       puts "The computer guessed #{randNum}."
     elsif input == "exit"
       puts "Goodbye!"
+    else
       puts "Inavalid input"
     end
     #if input.class == Integer     
