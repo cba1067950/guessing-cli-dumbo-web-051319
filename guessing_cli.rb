@@ -13,10 +13,12 @@ def run_guessing_game
       puts "You guessed the correct number!"
     elsif input.to_i != randNum
       puts "The computer guessed #{randNum}."
-    elsif input == "exit"
-      puts "Goodbye!"
     else
       puts "Inavalid input"
+    end
+    
+    if input == "exit"
+      puts "Goodbye!"
     end
     #if input.class == Integer     
     #  case 
