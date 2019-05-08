@@ -8,7 +8,7 @@ def run_guessing_game
   while input != "exit"
     input = gets.chomp
     
-    if input.class == integer     
+    if input.class == Integer     
       case 
         when randNum == input
           puts "You guessed the correct number!"
@@ -16,7 +16,7 @@ def run_guessing_game
           puts "The computer guessed #{randNum}"
       end
     end
-    if input.class == string 
+    if input.class == String 
       case 
         when input == "exit"
           puts "Goodbye!"
